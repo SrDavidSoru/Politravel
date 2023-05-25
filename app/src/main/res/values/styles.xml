@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="txtTituloPaquete">
+        <item name="android:textColor">@color/blueHard</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="txtTituloDetail">
+        <item name="android:textColor">@color/blueHard</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+    <style name="txtCuerpo">
+        <item name="android:textColor">@color/blueHard</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <style name="numDiasPaquete">
+        <item name="android:textColor">@color/blueHard</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="numDiasDetail">
+        <item name="android:textColor">@color/blueHard</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">23dp</item>
+    </style>
+    <style name="diasPaquete">
+        <item name="android:textColor">@color/blueHard</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <style name="mini_icon_paquete">
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+    </style>
+
+    <style name="img_paquete">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">135dp</item>
+    </style>
+
+    <style name="img_cardview_select">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+</resources>

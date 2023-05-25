@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "titulo": "Tour nipón",
+    "dias": 15,
+    "imgCiudad": ["tokyo.jpeg", "tokyo2.jpeg", "tokyo3.jpeg"],
+    "imgTransporte": "avion.png",
+    "precio": "999",
+    "inicio": "Tokyo",
+    "final": "Hokkaido",
+    "paradas": ["Kyoto", "Osaka"]
+  },
+  {
+    "id": 2,
+    "titulo": "Elegancia de Francia",
+    "dias": 8,
+    "imgCiudad": ["paris.jpeg", "paris2.jpeg", "paris3.jpeg"],
+    "imgTransporte": "tren.png",
+    "precio": 479,
+    "inicio": "París",
+    "final": "Lyon",
+    "paradas": ["Mónaco", "Marsella", "Toulouse"]
+  },
+  {
+    "id": 3,
+    "titulo": "Tevacae (del balcón)",
+    "dias": 4,
+    "imgCiudad": ["mallorca.jpeg", "mallorca2.jpeg", "mallorca3.jpeg"],
+    "imgTransporte": "barco.png",
+    "precio": 189,
+    "inicio": "Mallorca",
+    "final": "Manacor",
+    "paradas": ["Valldemosa", "Alcudia"]
+  },
+  {
+    "id": 4,
+    "titulo": "Tulipanes por doquier",
+    "dias": 7,
+    "imgCiudad": ["amsterdam.jpeg", "amsterdam2.jpeg", "amsterdam3.jpeg"],
+    "imgTransporte": "tren.png",
+    "precio": 349,
+    "inicio": "Ámsterdam",
+    "final": "Utrecht",
+    "paradas": ["Eindhoven", "Roterdam"]
+  },
+  {
+    "id": 5,
+    "titulo": "Faldas y gaitas",
+    "dias": 12,
+    "imgCiudad": ["edimburgo.jpeg", "edimburgo2.jpeg", "edimburgo3.jpeg"],
+    "imgTransporte": "avion.png",
+    "precio": 729,
+    "inicio": "Edimburgo",
+    "final": "Glasgow",
+    "paradas": ["Dundee", "Falkirk"]
+  }
+]

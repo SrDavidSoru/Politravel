@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blueBackground"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/blueSecondary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/avionlogo"
+                android:padding="10dp"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/logo2"
+                />
+            <ImageView
+                android:id="@+id/imgBorrar"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/bin"
+                android:padding="15dp"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lstImagenesEditar"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_set"
+                    tools:ignore="MissingConstraints" />
+                <ImageButton
+                    android:id="@+id/editarImgButton"
+                    android:background="@drawable/addimagebutton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre del paquete:"
+                        android:layout_marginTop="10dp"
+                        style="@style/txtTituloPaquete"/>
+                    <EditText
+                        android:id="@+id/nombrePaqueteEditar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tour nipón"
+                        android:textColorHint="@color/blueHard"
+                        style="@style/txtTituloDetail"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="end">
+                            <ImageView
+                                android:id="@+id/imgRestarDias"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/minusazul"/>
+                            <EditText
+                                android:id="@+id/diasPaqueteEditar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15"
+                                android:inputType="number"
+                                android:layout_marginHorizontal="8dp"
+                                style="@style/numDiasDetail"/>
+                            <TextView
+                                android:id="@+id/txtDiasEditar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="días"
+                                android:layout_marginRight="10dp"
+                                style="@style/txtTituloPaquete"/>
+                            <ImageView
+                                android:id="@+id/imgSumarDias"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/plusazul"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end">
+                            <EditText
+                                android:id="@+id/precioPaqueteEditar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="999"
+                                android:inputType="number"
+                                android:layout_marginHorizontal="4dp"
+                                style="@style/numDiasDetail"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="€"
+                                android:layout_marginRight="10dp"
+                                style="@style/txtTituloPaquete"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_set"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingHorizontal="20dp"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgAvionSelect"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:src="@drawable/avionuns"/>
+                    <ImageView
+                        android:id="@+id/imgBarcoSelect"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:src="@drawable/barcouns"/>
+                    <ImageView
+                        android:id="@+id/imgTrenSelect"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:src="@drawable/trenuns"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/transporteEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selecciona tu transporte"
+                    android:layout_marginVertical="10dp"
+                    style="@style/txtTituloPaquete"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/border_set">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/startpoint"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inicio"
+                        android:layout_marginLeft="10dp"
+                        style="@style/txtTituloPaquete"/>
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/inicioEditar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Punto de inicio del paquete"
+                    android:maxLength="40"
+                    style="@style/txtCuerpo"/>
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/destino"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Destino"
+                        android:layout_marginLeft="10dp"
+                        style="@style/txtTituloPaquete"/>
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/finalEditar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="40"
+                    android:hint="Última parada"
+                    style="@style/txtCuerpo"/>
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/middle"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paradas"
+                        android:layout_marginLeft="10dp"
+                        style="@style/txtTituloPaquete"/>
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/listParadasEditar"
+                    style="@style/txtCuerpo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="5dp">
+                    <EditText
+                        android:id="@+id/nuevaParadaEditar"
+                        android:layout_width="300dp"
+                        android:maxLength="40"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:hint="Nueva parada..."
+                        style="@style/txtCuerpo"/>
+                    <ImageView
+                        android:id="@+id/imgNuevaParada"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/plusazul"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/border_set"
+                android:padding="10dp">
+                <Button
+                    android:id="@+id/btnGuardarCambiosEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar cambios"
+                    android:backgroundTint="@color/yellowAction"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
